@@ -161,8 +161,8 @@ class GAN:
             self.opt_G = tf.train.AdamOptimizer(1e-4, beta1=0., beta2=0.9).minimize(self.g_loss, var_list=G.var)
         elif GAN_type == "LSGAN":
             #LSGAN, paper: Least Squares Generative Adversarial Networks
-            self.fake_logit = tf.nn.sigmoid(D(self.fake_img))
-            self.real_logit = tf.nn.sigmoid(D(self.img, reuse=True))
+            self.fake_logit = D(self.fake_img)
+            self.real_logit = D(self.img, reuse=True)
             self.d_loss = tf.reduce_mean(0.5 * tf.square(self.real_logit - 1) + 0.5 * tf.square(self.fake_logit))
             self.g_loss = tf.reduce_mean(0.5 * tf.square(self.fake_logit - 1))
             self.opt_D = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.d_loss, var_list=D.var)
