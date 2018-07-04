@@ -8,7 +8,7 @@ This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 
 
 More details of these GANs, please see follow papers:
 
-1. DCGAN: [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://arxiv.org/pdf/1511.06434.pdf%C3%AF%C2%BC%E2%80%B0)
+1. DCGAN: [Unsupervised representation learning with deep convolutional generative adversarial networks](https://arxiv.org/pdf/1511.06434.pdf%C3%AF%C2%BC%E2%80%B0)
 
 2. WGAN: [Wasserstein gan](https://arxiv.org/pdf/1701.07875.pdf?__hstc=200028081.1bb630f9cde2cb5f07430159d50a3c91.1524009600081.1524009600082.1524009600083.1&__hssc=200028081.1.1524009600084&__hsfp=1773666937)
 
@@ -20,4 +20,18 @@ More details of these GANs, please see follow papers:
 
 How to use 
 ----------
-Firstly, you should download the data set from [BaiduYun]()
+Firstly, you should download the data 'facedata.mat' from [BaiduYun](), then put the file 'facedata.mat' into the folder 'TrainingSet'.
+
+Necessory python packages are as follow:
+
+1. tensorflow
+
+2. pillow
+
+3. scipy
+
+4. numpy
+
+Results of this code
+--------------------
+[!DCGAN]()
