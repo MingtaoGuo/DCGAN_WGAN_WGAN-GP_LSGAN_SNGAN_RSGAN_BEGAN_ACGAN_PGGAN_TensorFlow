@@ -34,4 +34,8 @@ Necessory python packages are as follow:
 
 Results of this code
 --------------------
-[!DCGAN]()
+![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/DCGAN.jpg)
+
+Compare WGAN, WGAN-GP, SNGAN of different iteration
+-----------------------------------------------------
+![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/GAN.jpg)
