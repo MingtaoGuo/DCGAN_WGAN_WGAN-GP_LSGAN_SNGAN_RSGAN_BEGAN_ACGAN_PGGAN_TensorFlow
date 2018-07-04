@@ -20,7 +20,7 @@ More details of these GANs, please see follow papers:
 
 How to use 
 ----------
-Firstly, you should download the data 'facedata.mat' from [BaiduYun](), then put the file 'facedata.mat' into the folder 'TrainingSet'.
+Firstly, you should download the data 'facedata.mat' from [BaiduYun](https://pan.baidu.com/s/12fcKytGOW222bS5BccteYw), then put the file 'facedata.mat' into the folder 'TrainingSet'.
 
 Necessory python packages are as follow:
 
