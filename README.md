@@ -18,6 +18,8 @@ More details of these GANs, please see follow papers:
 
 5. SNGAN: [Spectral normalization for generative adversarial networks](https://arxiv.org/pdf/1802.05957.pdf)
 
+6. RSGAN: [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
+
 How to use 
 ----------
 Firstly, you should download the data 'facedata.mat' from [BaiduYun](https://pan.baidu.com/s/12fcKytGOW222bS5BccteYw), then put the file 'facedata.mat' into the folder 'TrainingSet'.
