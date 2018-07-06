@@ -1,10 +1,10 @@
-# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN
+# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN
 Implementation of some different variants of GANs 
 
 Introduction
 --------------
 
-This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN'. 
+This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN'. 
 
 More details of these GANs, please see follow papers:
 
@@ -18,7 +18,7 @@ More details of these GANs, please see follow papers:
 
 5. SNGAN: [Spectral normalization for generative adversarial networks](https://arxiv.org/pdf/1802.05957.pdf)
 
-6. RSGAN: [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
+6. RSGAN&RaSGAN: [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
 
 How to use 
 ----------
