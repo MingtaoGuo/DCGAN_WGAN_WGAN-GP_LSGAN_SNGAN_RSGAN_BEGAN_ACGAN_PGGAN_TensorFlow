@@ -6,7 +6,7 @@ from PIL import Image
 img_H = 64
 img_W = 64
 img_C = 3
-GAN_type = "SNGAN"  # DCGAN, WGAN, WGAN-GP, SNGAN, LSGAN, RSGAN
+GAN_type = "RSGAN"  # DCGAN, WGAN, WGAN-GP, SNGAN, LSGAN, RSGAN, RaSGAN
 batchsize = 128
 epsilon = 1e-14#if epsilon is too big, training of DCGAN is failure.
 
@@ -176,11 +176,21 @@ class GAN:
             self.opt_D = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.d_loss, var_list=D.var)
             self.opt_G = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.g_loss, var_list=G.var)
         elif GAN_type == "RSGAN":
-            #RSGAN, paper: The relativistic discriminator: a key element missing from standard GAN
             self.fake_logit = D(self.fake_img)
             self.real_logit = D(self.img, reuse=True)
             self.d_loss = - tf.reduce_mean(tf.log(tf.nn.sigmoid(self.real_logit - self.fake_logit) + epsilon))
             self.g_loss = - tf.reduce_mean(tf.log(tf.nn.sigmoid(self.fake_logit - self.real_logit) + epsilon))
+            self.opt_D = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.d_loss, var_list=D.var)
+            self.opt_G = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.g_loss, var_list=G.var)
+        elif GAN_type == "RaSGAN":
+            self.fake_logit = D(self.fake_img)
+            self.real_logit = D(self.img, reuse=True)
+            self.avg_fake_logit = tf.reduce_mean(self.fake_logit)
+            self.avg_real_logit = tf.reduce_mean(self.real_logit)
+            self.D_r_tilde = tf.nn.sigmoid(self.real_logit - self.avg_fake_logit)
+            self.D_f_tilde = tf.nn.sigmoid(self.fake_logit - self.avg_real_logit)
+            self.d_loss = - tf.reduce_mean(tf.log(self.D_r_tilde + epsilon)) - tf.reduce_mean(tf.log(1 - self.D_f_tilde + epsilon))
+            self.g_loss = - tf.reduce_mean(tf.log(self.D_f_tilde + epsilon)) - tf.reduce_mean(tf.log(1 - self.D_r_tilde + epsilon))
             self.opt_D = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.d_loss, var_list=D.var)
             self.opt_G = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.g_loss, var_list=G.var)
         self.sess = tf.Session()
@@ -196,15 +206,15 @@ class GAN:
                 batch = facedata[i*batchsize:i*batchsize+batchsize, :, :, :] / 255.0
                 z = np.random.standard_normal([batchsize, 100])
                 d_loss = self.sess.run(self.d_loss, feed_dict={self.img: batch, self.Z: z})
-                g_loss = self.sess.run(self.g_loss, feed_dict={self.Z: z})
+                g_loss = self.sess.run(self.g_loss, feed_dict={self.img: batch, self.Z: z})
                 self.sess.run(self.opt_D, feed_dict={self.img: batch, self.Z: z})
                 if GAN_type == "WGAN":
                     self.sess.run(self.clip)#WGAN weight clipping
-                self.sess.run(self.opt_G, feed_dict={self.Z: z})
+                self.sess.run(self.opt_G, feed_dict={self.img: batch, self.Z: z})
                 if i % 10 == 0:
                     print("epoch: %d, step: %d, d_loss: %g, g_loss: %g"%(epoch, i,  d_loss, g_loss))
                     z = np.random.standard_normal([batchsize, 100])
-                    imgs = self.sess.run(self.fake_img, feed_dict={self.Z: z})
+                    imgs = self.sess.run(self.fake_img, feed_dict={self.img: batch, self.Z: z})
                     for j in range(batchsize):
                         if img_C == 1:
                             Image.fromarray(np.reshape(np.uint8(mapping(imgs[j, :, :, :])), [img_H, img_W])).save(
