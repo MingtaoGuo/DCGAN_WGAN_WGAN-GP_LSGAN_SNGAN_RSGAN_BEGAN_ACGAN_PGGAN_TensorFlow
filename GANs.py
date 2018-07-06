@@ -6,7 +6,7 @@ from PIL import Image
 img_H = 64
 img_W = 64
 img_C = 3
-GAN_type = "RSGAN"  # DCGAN, WGAN, WGAN-GP, SNGAN, LSGAN, RSGAN, RaSGAN
+GAN_type = "SNGAN"  # DCGAN, WGAN, WGAN-GP, SNGAN, LSGAN, RSGAN, RaSGAN
 batchsize = 128
 epsilon = 1e-14#if epsilon is too big, training of DCGAN is failure.
 
