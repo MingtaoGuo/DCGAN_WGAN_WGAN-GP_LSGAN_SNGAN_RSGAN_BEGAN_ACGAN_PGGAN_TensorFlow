@@ -176,6 +176,7 @@ class GAN:
             self.opt_D = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.d_loss, var_list=D.var)
             self.opt_G = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.g_loss, var_list=G.var)
         elif GAN_type == "RSGAN":
+            #RSGAN, paper: The relativistic discriminator: a key element missing from standard GAN
             self.fake_logit = D(self.fake_img)
             self.real_logit = D(self.img, reuse=True)
             self.d_loss = - tf.reduce_mean(tf.log(tf.nn.sigmoid(self.real_logit - self.fake_logit) + epsilon))
@@ -183,6 +184,7 @@ class GAN:
             self.opt_D = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.d_loss, var_list=D.var)
             self.opt_G = tf.train.AdamOptimizer(2e-4, beta1=0.5).minimize(self.g_loss, var_list=G.var)
         elif GAN_type == "RaSGAN":
+            #RaSGAN, paper: The relativistic discriminator: a key element missing from standard GAN
             self.fake_logit = D(self.fake_img)
             self.real_logit = D(self.img, reuse=True)
             self.avg_fake_logit = tf.reduce_mean(self.fake_logit)
