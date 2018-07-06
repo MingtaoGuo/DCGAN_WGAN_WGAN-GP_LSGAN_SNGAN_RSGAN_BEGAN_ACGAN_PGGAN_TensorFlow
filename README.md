@@ -39,6 +39,6 @@ Results of this code
 This result is using DCGAN trained about 8000 iterations.
 <div align=center><img src="https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/DCGAN.jpg"/></div>
 
-Compare LSGAN, WGAN, WGAN-GP, SNGAN of different iteration
+Compare LSGAN, WGAN, WGAN-GP, SNGAN, RSGAN of different iteration
 -----------------------------------------------------
 ![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/GAN.jpg)
