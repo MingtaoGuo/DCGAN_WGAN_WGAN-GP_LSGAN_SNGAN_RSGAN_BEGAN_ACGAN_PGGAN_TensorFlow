@@ -145,7 +145,7 @@ class GAN:
             self.g_loss = -tf.reduce_mean(self.fake_logit)
             self.clip = []
             for _, var in enumerate(D.var):
-                self.clip.append(tf.clip_by_value(var, -0.01, 0.01))
+                self.clip.append(var.assign(tf.clip_by_value(var, -0.01, 0.01)))
             self.opt_D = tf.train.RMSPropOptimizer(5e-5).minimize(self.d_loss, var_list=D.var)
             self.opt_G = tf.train.RMSPropOptimizer(5e-5).minimize(self.g_loss, var_list=G.var)
         elif GAN_type == "WGAN-GP":
