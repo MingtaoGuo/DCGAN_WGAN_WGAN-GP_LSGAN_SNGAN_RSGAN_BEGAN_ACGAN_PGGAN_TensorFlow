@@ -1,7 +1,7 @@
 # DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN
 Implementation of some different variants of GANs 
 
-Introduction
+## Introduction
 --------------
 
 This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN'. 
@@ -20,19 +20,16 @@ More details of these GANs, please see follow papers:
 
 6. RSGAN&RaSGAN: [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
 
-How to use 
+## How to use 
 ----------
 Firstly, you should download the data 'facedata.mat' from [BaiduYun](https://pan.baidu.com/s/12fcKytGOW222bS5BccteYw), then put the file 'facedata.mat' into the folder 'TrainingSet'.
 
-Necessory python packages are as follow:
-
-1. tensorflow
-
-2. pillow
-
-3. scipy
-
-4. numpy
+## Requirements
+1. python3.5
+2. tensorflow1.4.0
+3. pillow
+4. scipy
+5. numpy
 
 Results of this code
 --------------------
