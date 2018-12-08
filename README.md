@@ -20,9 +20,11 @@ More details of these GANs, please see follow papers:
 
 6. RSGAN&RaSGAN: [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
 
+7. BEGAN:[BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/pdf/1703.10717.pdf)
+
 ## How to use 
 ----------
-Firstly, you should download the data 'facedata.mat' from [BaiduYun](https://pan.baidu.com/s/12fcKytGOW222bS5BccteYw), then put the file 'facedata.mat' into the folder 'TrainingSet'.
+Firstly, you should download the data 'facedata.mat' from [Baidu Drive](https://pan.baidu.com/s/12fcKytGOW222bS5BccteYw) or [Google Drive](https://drive.google.com/open?id=1ROGET9rA5WAdU3C8Lfs5mxg5ufLD2uCO), then put the file 'facedata.mat' into the folder 'TrainingSet'.
 
 ## Requirements
 1. python3.5
@@ -39,3 +41,8 @@ This result is using DCGAN trained about 8000 iterations.
 Compare LSGAN, WGAN, WGAN-GP, SNGAN, RSGAN of different iteration
 -----------------------------------------------------
 ![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/GAN.jpg)
+
+Convergence of BEGAN
+------------------------
+![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/BEGAN.jpg)
+![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/BEGAN_converge.jpg)
