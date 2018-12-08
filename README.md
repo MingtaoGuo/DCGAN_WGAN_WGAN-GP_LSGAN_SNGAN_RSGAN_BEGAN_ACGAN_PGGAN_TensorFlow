@@ -1,10 +1,10 @@
-# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN
+# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN_BEGAN
 Implementation of some different variants of GANs 
 
 ## Introduction
 --------------
 
-This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN'. 
+This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN', 'BEGAN'. 
 
 More details of these GANs, please see follow papers:
 
