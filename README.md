@@ -21,7 +21,9 @@ More details of these GANs, please see follow papers:
 6. RSGAN&RaSGAN: [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
 
 7. BEGAN:[BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/pdf/1703.10717.pdf)
-
+## Attention
+-------------
+If your computer don't have GPU to accelerate the training process, please click [Google Cloud Colab](https://colab.research.google.com/drive/1BKGcw58kOQc4mxxm4VbAJ6BX-DEzZtgE) to train the GANs.
 ## How to use 
 ----------
 Firstly, you should download the data 'facedata.mat' from [Baidu Drive](https://pan.baidu.com/s/12fcKytGOW222bS5BccteYw) or [Google Drive](https://drive.google.com/open?id=1ROGET9rA5WAdU3C8Lfs5mxg5ufLD2uCO), then put the file 'facedata.mat' into the folder 'TrainingSet'.
