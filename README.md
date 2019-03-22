@@ -51,7 +51,7 @@ Convergence of BEGAN
 
 ACGAN for face generating
 --------------------------
-dataset: download address: 
+dataset: download address: [Baidu Drive](链接：https://pan.baidu.com/s/1QZ2cra5Yu-2fcQx5dH7WiQ ) password: 5egd
 
 |Fixed label, change noise slightly|Fixed noise, change label slightly|
 |-|-|
