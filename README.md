@@ -46,3 +46,10 @@ Convergence of BEGAN
 ------------------------
 ![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/BEGAN.jpg)
 ![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/BEGAN_converge.jpg)
+
+ACGAN for face generating
+--------------------------
+|Fixed label, change noise slightly|Fixed noise, change label slightly|
+|-|-|
+|![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/fixed_label.jpg)|![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/fixed_noise.jpg)|
+
