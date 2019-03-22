@@ -35,7 +35,7 @@ def train():
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
     saver = tf.train.Saver()
-    data, labels = read_face_data("./face_woman_man.mat")
+    data, labels = read_face_data("./dataset/face_woman_man.mat")
     for i in range(50000):
         s = time.time()
         for j in range(1):
