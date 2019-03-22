@@ -44,7 +44,7 @@ def train():
             sess.run(D_opt, feed_dict={real_img: BATCH, label: LABELS, z: Z})
         sess.run(G_opt, feed_dict={real_img: BATCH, label: LABELS, z: Z})
         e = time.time()
-        if i % 10 == 0:
+        if i % 100 == 0:
             [D_LOSS, G_LOSS, FAKE_IMG] = sess.run([D_loss, G_loss, fake_img], feed_dict={real_img: BATCH, label: LABELS, z: Z})
             Image.fromarray(np.uint8((FAKE_IMG[0, :, :, :] + 1) * 127.5)).save("./results/" + str(i) +"_" + str(int(LABELS[0])) + ".jpg")
             print("Iteration: %d, D_loss: %f, G_loss: %f, update_time: %f"%(i, D_LOSS, G_LOSS, e-s))
