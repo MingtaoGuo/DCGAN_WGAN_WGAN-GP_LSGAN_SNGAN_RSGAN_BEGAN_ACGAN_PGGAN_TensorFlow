@@ -1,4 +1,4 @@
-# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN_BEGAN
+# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN_BEGAN_ACGAN_PGGAN
 Implementation of some different variants of GANs 
 
 ## Introduction
@@ -56,4 +56,8 @@ dataset: download address: [Baidu Drive](https://pan.baidu.com/s/1QZ2cra5Yu-2fcQ
 |Fixed label, change noise slightly|Fixed noise, change label slightly|
 |-|-|
 |![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/fixed_label.jpg)|![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/fixed_noise.jpg)|
+
+PGGAN for face generating
+----------------------------
+Results are under training...
 
