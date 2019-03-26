@@ -1,4 +1,4 @@
-# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_RaSGAN_BEGAN_ACGAN_PGGAN
+# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN
 Implementation of some different variants of GANs 
 
 ## Introduction
