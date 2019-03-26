@@ -4,7 +4,7 @@ Implementation of some different variants of GANs
 ## Introduction
 --------------
 
-This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN', 'BEGAN'. 
+This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN', 'BEGAN', 'ACGAN', 'PGGAN'. 
 
 More details of these GANs, please see follow papers:
 
@@ -23,6 +23,8 @@ More details of these GANs, please see follow papers:
 7. BEGAN:[BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/pdf/1703.10717.pdf)
 
 8. ACGAN: [Conditional Image Synthesis With Auxiliary Classifier GANs](https://arxiv.org/pdf/1610.09585.pdf)
+
+9. PGGAN: [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196)
 ## Attention
 If your computer don't have GPU to accelerate the training process, please click [Google Cloud Colab](https://colab.research.google.com/drive/1BKGcw58kOQc4mxxm4VbAJ6BX-DEzZtgE) to train the GANs.
 ## How to use 
