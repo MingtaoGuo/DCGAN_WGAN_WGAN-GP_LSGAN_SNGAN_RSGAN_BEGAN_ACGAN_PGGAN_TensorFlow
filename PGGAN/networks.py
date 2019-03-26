@@ -1,4 +1,4 @@
-from vggnet import *
+from ops import *
 
 class generator:
     def __init__(self, name):
