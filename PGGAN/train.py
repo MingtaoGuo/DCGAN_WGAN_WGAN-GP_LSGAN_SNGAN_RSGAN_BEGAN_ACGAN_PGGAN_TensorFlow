@@ -1,7 +1,7 @@
 from networks import generator, discriminator
 import tensorflow as tf
 from utils import read_face_data, get_batch
-from vggnet import LSGAN_LOSS
+from ops import LSGAN_LOSS
 from PIL import Image
 import numpy as np
 
