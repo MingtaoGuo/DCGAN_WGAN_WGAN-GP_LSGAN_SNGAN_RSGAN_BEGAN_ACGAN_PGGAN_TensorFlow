@@ -59,5 +59,5 @@ dataset: download address: [Baidu Drive](https://pan.baidu.com/s/1QZ2cra5Yu-2fcQ
 
 PGGAN for face generating
 ----------------------------
-Results are under training...
+![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/pggan.jpg)
 
