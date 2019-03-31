@@ -44,7 +44,7 @@ def fully_connected(name, x, out_nums=1):
 
 
 class pix2pix():
-    def __init__(self, batchsize=1, img_h=256, img_w=256, lambda_l1=100, path="E:/数据集/maps/train/"):
+    def __init__(self, batchsize=4, img_h=256, img_w=256, lambda_l1=100, path="./dataset/maps/train/"):
         self.batch_size = batchsize
         self.img_h = img_h
         self.img_w = img_w
