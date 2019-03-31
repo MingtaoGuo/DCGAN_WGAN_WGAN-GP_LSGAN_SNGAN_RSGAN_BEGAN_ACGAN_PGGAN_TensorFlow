@@ -46,7 +46,7 @@ def fully_connected(name, x, out_nums=1):
 
 
 class pix2pix():
-    def __init__(self, batchsize=1, img_h=256, img_w=256, lambda_l1=100, path="./maps/val/"):
+    def __init__(self, batchsize=1, img_h=256, img_w=256, lambda_l1=100, path="./dataset/maps/val/"):
         self.batch_size = batchsize
         self.img_h = img_h
         self.img_w = img_w
@@ -76,7 +76,7 @@ class pix2pix():
         INPUTS[0] = misc.imresize(img[:, :img_w//2], [self.img_h, self.img_w]) / 127.5 - 1.0
         [fake_img] = self.sess.run([self.inputs_fake], feed_dict={self.inputs_condition: INPUTS_CONDITION})
         out_img = np.concatenate((INPUTS_CONDITION[0], fake_img[0], INPUTS[0]), axis=1)
-        Image.fromarray(np.uint8((out_img + 1.0)*127.5)).save("./results/1.jpg")
+        #Image.fromarray(np.uint8((out_img + 1.0)*127.5)).save("./results/1.jpg")
         plt.imshow(np.uint8((out_img + 1.0)*127.5))
         plt.grid("off")
         plt.axis("off")
