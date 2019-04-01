@@ -68,5 +68,5 @@ PGGAN for face generating
 Pix2Pix
 -----------
 Dataset: Google maps download address: [http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz](http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz)
-![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/maps.jpg)
+![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/pix2pix.jpg)
 
