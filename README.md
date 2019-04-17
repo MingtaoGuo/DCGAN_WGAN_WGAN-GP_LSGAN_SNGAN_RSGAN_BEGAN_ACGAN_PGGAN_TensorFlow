@@ -65,6 +65,12 @@ PGGAN for face generating
 ----------------------------
 ![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/pggan.jpg)
 
+SNGAN for cifar-10
+--------------------
+|D_loss|G_loss|results|
+|-|-|-|
+|![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/sngan_d_loss.jpg)|![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/sngan_g_loss.jpg)|![](https://github.com/MingtaoGuo/DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN/raw/master/Image/sngan_cifar.jpg)|
+
 Pix2Pix
 -----------
 Dataset: Google maps download address: [http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz](http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz)
