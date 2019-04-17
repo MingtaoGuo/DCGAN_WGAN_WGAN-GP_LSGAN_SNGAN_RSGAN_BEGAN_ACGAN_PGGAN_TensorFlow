@@ -55,15 +55,14 @@ def Train():
         sess.run(G_opt, feed_dict={z: Z, train_phase: True})
         e = time.time()
         one_itr_time = e - s + updatetime + readtime
-        if itr % 10 == 0:
+        if itr % 100 == 0:
             Dis_loss = sess.run(D_loss, feed_dict={x: batch, z: Z, train_phase: False})
             Gen_loss = sess.run(G_loss, feed_dict={z: Z, train_phase: False})
             print("Iteration: %d, D_loss: %f, G_loss: %f, Read_time: %f, Updata_time: %f, One_itr_time: %f" % (itr, Dis_loss, Gen_loss, readtime, updatetime, one_itr_time))
             FAKE_IMG = sess.run(fake_img, feed_dict={z: Z, train_phase: False})
             Image.fromarray(np.uint8((FAKE_IMG[0, :, :, :] + 1)*127.5)).save("./save_img/"+str(itr) + ".jpg")
         if itr % 500 == 0:
-            # saver.save(sess, "./save_para/model.ckpt")
+            saver.save(sess, "./save_para/model.ckpt")
 
-            aaa = 0
 if __name__ == "__main__":
     Train()
