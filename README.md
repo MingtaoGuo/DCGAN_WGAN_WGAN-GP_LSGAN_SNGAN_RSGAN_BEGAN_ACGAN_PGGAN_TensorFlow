@@ -28,7 +28,7 @@ More details of these GANs, please see follow papers:
 
 10. pix2pix: [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004.pdf)
 
-11. BigGAN: [Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/pdf/1809.11096.pdf)[Code](https://github.com/MingtaoGuo/BigGAN-tensorflow)
+11. BigGAN: [Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/pdf/1809.11096.pdf) [[Code]](https://github.com/MingtaoGuo/BigGAN-tensorflow)
 ## Attention
 If your computer don't have GPU to accelerate the training process, please click [Google Cloud Colab](https://colab.research.google.com/drive/1BKGcw58kOQc4mxxm4VbAJ6BX-DEzZtgE) to train the GANs.
 ## How to use 
