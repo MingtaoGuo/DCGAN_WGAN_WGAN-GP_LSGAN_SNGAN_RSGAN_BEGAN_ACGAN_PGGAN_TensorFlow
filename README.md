@@ -1,10 +1,10 @@
-# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_pix2pix
+# DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_pix2pix_BigGAN
 Implementation of some different variants of GANs 
 
 ## Introduction
 --------------
 
-This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN', 'BEGAN', 'ACGAN', 'PGGAN', 'pix2pix'. 
+This code is mainly implement some basic GANs about 'DCGAN', 'WGAN', 'WGAN-GP', 'LSGAN', 'SNGAN', 'RSGAN'&'RaSGAN', 'BEGAN', 'ACGAN', 'PGGAN', 'pix2pix', 'BigGAN'. 
 
 More details of these GANs, please see follow papers:
 
@@ -27,6 +27,8 @@ More details of these GANs, please see follow papers:
 9. PGGAN: [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196)
 
 10. pix2pix: [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004.pdf)
+
+11. BigGAN: [Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/pdf/1809.11096.pdf)[Code](https://github.com/MingtaoGuo/BigGAN-tensorflow)
 ## Attention
 If your computer don't have GPU to accelerate the training process, please click [Google Cloud Colab](https://colab.research.google.com/drive/1BKGcw58kOQc4mxxm4VbAJ6BX-DEzZtgE) to train the GANs.
 ## How to use 
