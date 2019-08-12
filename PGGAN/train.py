@@ -6,7 +6,7 @@ from PIL import Image
 import numpy as np
 
 BATCH_SIZE = 32
-MAX_ITR = 100
+MAX_ITR = 10000
 LEARNING_RATE = 1e-3
 G_DIM = [512, 256, 128, 64, 32, 16]
 D_DIM = [16, 32, 64, 128, 256, 512]
