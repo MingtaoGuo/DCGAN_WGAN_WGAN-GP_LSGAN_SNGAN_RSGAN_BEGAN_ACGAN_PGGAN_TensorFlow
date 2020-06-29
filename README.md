@@ -1,6 +1,6 @@
 # DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_pix2pix_BigGAN
 Implementation of some different variants of GANs 
-
+DCGAN_WGAN_WGAN-GP_LSGAN_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_TensorFlow" alt=“GitAds”/>
 ## Introduction
 --------------
 
