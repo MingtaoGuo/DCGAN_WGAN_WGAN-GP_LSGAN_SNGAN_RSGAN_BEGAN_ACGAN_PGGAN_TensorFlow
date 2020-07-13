@@ -1,3 +1,5 @@
+DCGAN_WGAN_WGAN-GP_LSGAN_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_TensorFlow is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial
+
 <a href="https://tracking.gitads.io/?repo=DCGAN_WGAN_WGAN-GP_LSGAN_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_TensorFlow"><img src="https://images.gitads.io/DCGAN_WGAN_WGAN-GP_LSGAN_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_TensorFlow" alt="GitAds"/></a>
 
 # DCGAN_LSGAN_WGAN_WGAN-GP_SNGAN_RSGAN_BEGAN_ACGAN_PGGAN_pix2pix_BigGAN
